@@ -1,0 +1,46 @@
+{
+  "random_seeds": [11, 22, 33, 44, 55],
+  "n_samples_per_domain": 8000,
+  "split": {
+    "train": 0.7,
+    "val": 0.15,
+    "test": 0.15
+  },
+  "fairness_epsilon": 0.05,
+  "spd_epsilon": 0.01,
+  "default_threshold": 0.5,
+  "threshold_grid": [0.2, 0.8, 121],
+  "oversight_band": [0.495, 0.505],
+  "domains": {
+    "loan": {
+      "bias_group_penalty": 0.3,
+      "bias_proxy_penalty": 0.36,
+      "historical_label_noise": 0.03,
+      "utility_weights": {
+        "tp": 1.0,
+        "fp": -3.0,
+        "fn": -0.5
+      }
+    },
+    "hiring": {
+      "bias_group_penalty": 0.24,
+      "bias_proxy_penalty": 0.3,
+      "historical_label_noise": 0.03,
+      "utility_weights": {
+        "tp": 1.0,
+        "fp": -1.5,
+        "fn": -0.7
+      }
+    },
+    "medical_triage": {
+      "bias_group_penalty": 0.22,
+      "bias_proxy_penalty": 0.28,
+      "historical_label_noise": 0.03,
+      "utility_weights": {
+        "tp": 2.5,
+        "fp": -2.0,
+        "fn": -5.0
+      }
+    }
+  }
+}

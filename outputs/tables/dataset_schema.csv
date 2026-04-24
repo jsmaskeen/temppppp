@@ -1,0 +1,44 @@
+domain,column,dtype,description
+loan,applicant_id,int,Unique row id
+loan,domain,str,Experiment domain
+loan,group_id,binary,Protected group attribute for fairness auditing
+loan,proxy_feature,float,Proxy correlated with group membership
+loan,oversight_signal,float,"Human reviewer confidence signal in [0,1]"
+loan,p_true,float,Latent true probability of positive outcome
+loan,y_true,binary,True outcome label
+loan,y_hist,binary,Biased historical decision label
+loan,income,float,Domain-specific predictor
+loan,debt_to_income,float,Domain-specific predictor
+loan,employment_years,float,Domain-specific predictor
+loan,prior_defaults,float,Domain-specific predictor
+loan,credit_history_years,float,Domain-specific predictor
+loan,requested_loan,float,Domain-specific predictor
+loan,zip_risk_proxy,float,Domain-specific alias for proxy feature
+hiring,applicant_id,int,Unique row id
+hiring,domain,str,Experiment domain
+hiring,group_id,binary,Protected group attribute for fairness auditing
+hiring,proxy_feature,float,Proxy correlated with group membership
+hiring,oversight_signal,float,"Human reviewer confidence signal in [0,1]"
+hiring,p_true,float,Latent true probability of positive outcome
+hiring,y_true,binary,True outcome label
+hiring,y_hist,binary,Biased historical decision label
+hiring,years_experience,float,Domain-specific predictor
+hiring,skill_test_score,float,Domain-specific predictor
+hiring,education_quality,float,Domain-specific predictor
+hiring,employment_gap_months,float,Domain-specific predictor
+hiring,portfolio_score,float,Domain-specific predictor
+hiring,referral_proxy,float,Domain-specific alias for proxy feature
+medical_triage,applicant_id,int,Unique row id
+medical_triage,domain,str,Experiment domain
+medical_triage,group_id,binary,Protected group attribute for fairness auditing
+medical_triage,proxy_feature,float,Proxy correlated with group membership
+medical_triage,oversight_signal,float,"Human reviewer confidence signal in [0,1]"
+medical_triage,p_true,float,Latent true probability of positive outcome
+medical_triage,y_true,binary,True outcome label
+medical_triage,y_hist,binary,Biased historical decision label
+medical_triage,severity_score,float,Domain-specific predictor
+medical_triage,comorbidity_count,float,Domain-specific predictor
+medical_triage,age,float,Domain-specific predictor
+medical_triage,oxygen_saturation,float,Domain-specific predictor
+medical_triage,heart_rate_risk,float,Domain-specific predictor
+medical_triage,arrival_mode_proxy,float,Domain-specific alias for proxy feature
